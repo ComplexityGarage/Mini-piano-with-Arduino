@@ -3,7 +3,7 @@
 - Natalia Nowosada
 - Jakub Wolak
 # Description of the project 
-Text here... 
+Text here... 123
 # Science and tech used 
 Text & plots here... 
 # State of the art 
