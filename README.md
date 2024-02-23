@@ -1,12 +1,15 @@
-# ExemplaryProject 5 (Perfectest piano)
+# ExemplaryProject 5 (Mini piano Arduino)
 # Authors 
 - Natalia Nowosada
 - Jakub Wolak
 # Description of the project 
 Zamysłem naszego projektu było stworzenie mini pianina z użyciem Arduino. 
+
 Schemat dzieła:
+
 (zdjęcie)
 Kod:
+
 #include <SoftwareSerial.h>
 #include <DFPlayer_Mini_Mp3.h>
 
