@@ -1,4 +1,4 @@
-# ExemplaryProject 5 (Mini piano Arduino)
+# ExemplaryProject 5 (Mini piano with Arduino, multiplexer and DFPlayer mini)
 # Authors 
 - Natalia Nowosada
 - Jakub Wolak
@@ -10,7 +10,7 @@
 - DFPlayer mini
 - SIM card
 - 11 buttons
-- 11 resistors
+- 11 resistors 4,7k Ohm + 10k Ohm resistor
 - a lot of wires
 # Description of the project 
 The idea behind our project was to create mini piano using Arduino. Since we wanted each button to play one note and have many keys, we decided to use multiplexer for the inputs instead of connecting each button/key directly to Arduino pins. Ultimately the piano designed by us has a range of C4 -Bb4 (chromatic scale) which is 11 keys, but with this design its possible for the maximum of 16 keys through multiplexer + 8 with the Arduino pins which are unused, which gives us maximum of 24 keys (almost 2 octaves). 
@@ -26,15 +26,17 @@ Multiplexer:
 We have got a multiplexer with 11 out of 16 of the inputs connected to each button. Every button is also powered with constant voltage of 5V and when the button is pressed, the high voltage can be read by Arduino. We have also got a pull-down resistor so when button is not pressed, the voltage read by Arduino is 0V. 
 To read the signal we must also connect multiplexer to Arduino: outputs S0 to S3 are connected to pins 13 to 10 (see the code below), SIG to A0, EN and GND to ground and VCC to 5V.
 
-In the code we use "void MuxChannel(byte channel)" to select a multiplexer channel. When the channel is selected we can 
+In the code we use "void MuxChannel(byte channel)" to select a multiplexer channel and when the channel is selected, we can read its signal using "digitalRead(sig)". In the code we check every active channel (here there are 11 channels cheking the state of each button) and if the signal is high (button pressed), we play a sound.
 
 DFPLayer mini:
-
+We conneect it to Arduino: VCC to 5V, GND to ground, RX to pin 1<-TX (through high resistance resistor, 10k Ohm), TX to pin 0->RX on Arduino and speaker to SPK_1 and SPK_2.
+On SIM card we have got mp3 files named 0001.mp3, 0002.mp3, ... and so on. Each file is a unique sound of a piano note. 
+* When updating a code you must disconnect a wire connected to 0->RX pin on Arduino and when the code is uploaded to Arduino you connect it back again. If you don't do it then there is an error and you can't upload the code.
 
 Code:
 
 #include <SoftwareSerial.h> &emsp; &emsp;//essential for communicating with RX and TX pins <br />
-#include <DFPlayer_Mini_Mp3.h> &emsp; &emsp;//essential for playing the sounds
+#include <DFPlayer_Mini_Mp3.h> &emsp; &emsp;//essential for mp3_play() command
 
 const int s0 = 13;<br />
 const int s1 = 12;<br />
