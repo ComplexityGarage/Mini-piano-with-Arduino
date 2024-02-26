@@ -36,7 +36,7 @@ On SIM card we have got mp3 files named 0001.mp3, 0002.mp3, ... and so on. Each 
 
 &emsp;Code:
 
-https://github.com/ComplexityGarage/ExemplaryProject5/blob/main/code.ino
+https://github.com/ComplexityGarage/ExemplaryProject5/blob/main/piano_code.ino
 
 # State of the art:
 ![IMG_0113](https://github.com/ComplexityGarage/ExemplaryProject5/assets/125824728/831e3ea5-9e71-43f5-909c-10d0fc86135e)
