@@ -1,5 +1,5 @@
-#include <SoftwareSerial.h>
-#include <DFPlayer_Mini_Mp3.h>
+#include <SoftwareSerial.h>      //essential for TX and RX pins
+#include <DFPlayer_Mini_Mp3.h>   //essential for mp3_play()
 
 const int s0 = 13;
 const int s1 = 12;
