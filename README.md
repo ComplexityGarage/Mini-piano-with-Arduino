@@ -1,4 +1,4 @@
-# ExemplaryProject 5 (Mini piano with Arduino, multiplexer and DFPlayer mini)
+# ExemplaryProject 5: Mini piano with Arduino, multiplexer and DFPlayer mini
 # Authors 
 - Natalia Nowosada
 - Jakub Wolak
@@ -20,7 +20,10 @@ For the sound we have desided to use a DFPlayer mini with SIM card where the mp3
 
 How it works:
 
-Circuit diagram: (wlasnie go robie, mam nadzieje ze zaraz bedzie)
+Circuit diagram: 
+
+![IMG_0864](https://github.com/ComplexityGarage/ExemplaryProject5/assets/125824728/317f2261-d7fe-4e53-8da5-028def02ff8d)
+
 
 ![IMG_9911](https://github.com/ComplexityGarage/ExemplaryProject5/assets/125824728/3e5b594a-a21f-42d0-b860-1ae94c460d25)
 
