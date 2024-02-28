@@ -52,6 +52,7 @@ We printed piano keys with little pillars underneath and glued it to each button
 There are a few things that can be improved:
 - the speaker is very quiet, for improvement you could use for example a sound amplifier or a better speaker.
 - piano keys are not very reliable, they are hard to press; for improvement you could use bigger buttons or just use a diffrent method of pressing the buttons with the keys; also gluing keys with buttons using hot glue may not be most optimal idea because buttons can stop working when there is too much glue.
+- stability of construction and overall design of piano could be improved
 # Sources 
 https://github.com/fuhton/piano-mp3/tree/master/piano-mp3
 
