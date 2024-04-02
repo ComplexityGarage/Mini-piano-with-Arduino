@@ -1,4 +1,4 @@
-# ExemplaryProject 5: Mini piano with Arduino, multiplexer and DFPlayer mini
+# Mini piano with Arduino, multiplexer and DFPlayer mini
 # Authors 
 - Natalia Nowosada
 - Jakub Wolak
